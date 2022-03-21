@@ -4,6 +4,33 @@ import React, {useState} from 'react'
 // component 2
 // used JSX fragment to return only one element.
 
+
+
+const str = 'shubhogola.';
+
+const reg = /[,.;:]+/g;
+let res = str.search(reg);
+
+
+
+const print = () => {
+
+    str.charAt(res);
+
+    // str.split(reg).forEach(word => {
+
+    // word += " ";
+
+    // res += word;
+    
+}
+
+print();
+
+
+
+
+
 export default function TextBar(props) {
 
     function handleCopy() {
@@ -115,7 +142,7 @@ export default function TextBar(props) {
                     <h2>Preview</h2>
 
                     <p>
-                        {text.length >0 ?text.substring(0,302): 'Enter something to preview here..'}
+                        {text.length > 0 ?text.substring(0,302): 'Nothing to preview here..'}
                     </p>
                 
                 </div>

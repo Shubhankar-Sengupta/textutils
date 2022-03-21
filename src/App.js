@@ -49,13 +49,13 @@ function App() {
 
     <>
 
-    <Navbar mode={mode} title="Textutils" toggleMode={toggleMode}/>
+    {/* <Navbar mode={mode} title="Textutils" toggleMode={toggleMode}/>
 
     <Alert alert={alert}/>
 
-    <TextBar alert={showAlert} mode={mode}/>
+    <TextBar alert={showAlert} mode={mode}/> */}
 
-    {/* <Router>
+    <Router>
 
       <Navbar mode={mode} title="Textutils" toggleMode={toggleMode}/>
 
@@ -69,7 +69,7 @@ function App() {
 
       </Routes>
  
-    </Router> */}
+    </Router> 
    
     </>
     

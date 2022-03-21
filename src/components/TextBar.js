@@ -89,15 +89,15 @@ export default function TextBar(props) {
                         <textarea style={{backgroundColor:props.mode === 'light'? '#fff':'#212529', color:props.mode === 'light'? '#212529': '#fff'}} value={text} onChange={onchangestate} id='btn-text' className='form-control' rows={8}></textarea>
                     </div>
 
-                    <button className="btn btn-primary mt-3" onClick={onclickfunc}>Convert to Uppercase</button>
+                    <button disabled={text.length===0} className="btn btn-primary mt-3" onClick={onclickfunc}>Convert to Uppercase</button>
 
-                    <button className="btn btn-primary mt-3 mx-3" onClick={onclicklo}>Convert to Lowercase</button>
+                    <button disabled={text.length===0} className="btn btn-primary mt-3 mx-3" onClick={onclicklo}>Convert to Lowercase</button>
 
-                    <button className="btn btn-primary mt-3 mx-3" onClick={onclickCap}>Capitalize</button>
+                    <button disabled={text.length===0} className="btn btn-primary mt-3 mx-3" onClick={onclickCap}>Capitalize</button>
 
-                    <button className="btn btn-primary mt-3 mx-3" onClick={handleClear}>Clear Text</button>
+                    <button disabled={text.length===0} className="btn btn-primary mt-3 mx-3" onClick={handleClear}>Clear Text</button>
 
-                    <button className="btn btn-primary mt-3 mx-3" onClick={handleCopy}>Copy Text</button>
+                    <button disabled={text.length===0} className="btn btn-primary mt-3 mx-3" onClick={handleCopy}>Copy Text</button>
 
                 </div>
 
